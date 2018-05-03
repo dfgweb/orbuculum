@@ -557,7 +557,7 @@ void _itmPumpProcess( char c )
 
         // ------------------------------------
         case ITM_EV_SYNCED:
-            genericsReport( V_WARN, "ITM In Sync (%d)" EOL, ITMDecoderGetStats( &_r.i )->syncCount );
+            genericsReport( V_INFO, "ITM In Sync (%d)" EOL, ITMDecoderGetStats( &_r.i )->syncCount );
             break;
 
         // ------------------------------------
